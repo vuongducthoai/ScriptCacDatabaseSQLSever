@@ -1,0 +1,15 @@
+CREATE DATABASE QLKHO 
+ON PRIMARY (
+	NAME = QLKho_Data,
+	FILENAME = "F:\QLKHO_Data.mdf",
+	SIZE = 20MB,
+	FILEGROWTH = 5MB,
+	MAXSIZE = 80MB
+)
+
+LOG ON (
+	NAME = QLKho_Log,
+	FILENAME = "F:\QLKho_Log.ldf",
+	SIZE = 10MB,
+	FILEGROWTH = 10%
+);
